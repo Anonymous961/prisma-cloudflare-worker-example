@@ -2,7 +2,9 @@
 name = "prisma-cloudflare-worker-example"
 main = "src/index.ts"
 compatibility_date = "2024-05-24"
-compatibility_flags = ["nodejs_compat"]
+node_compat=true
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYWRmNGZiMDYtY2YwZS00MmNlLWE1YzQtNDEzNmE5NzBjNjJmIiwidGVuYW50X2lkIjoiNTA2MmJmMGY4ZmZlMzUwN2IzMDY2NDY2NzFlNmQxMGQwNzYwNzQ2MjM1ZDNjNGEwYWNlZjA3NmI1Y2YzZDMyNiIsImludGVybmFsX3NlY3JldCI6IjczYTUzZjNhLWI3NDYtNGQ2ZS05YjEzLTVlZTY2MzYzOTRjZiJ9.aIkv9HuqlC9tEIBlMQuzbMdirDfsN3uDkW7sp-hT3bU"
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
